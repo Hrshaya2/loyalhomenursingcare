@@ -2330,6 +2330,8 @@ html {
     
     .feature-number {
         font-size: 3rem;
-        min-width: 60px;
+        min-width: 80px; 
+        height: auto;
     }
 }
+
