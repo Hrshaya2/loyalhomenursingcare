@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Community - Loyal Home Nursing Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="logo">
+                <span>LOYAL</span>
+                <span class="logo-subtitle">HOME NURSING CARE</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#team" class="nav-link">Team</a>
+                </li>
+            </ul>
+            <button class="book-appointment-btn" onclick="window.location.href='index.html'">Back to Home</button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Join Form Section -->
+    <section class="join-page-section">
+        <div class="container">
+            <div class="join-page-content">
+                <div class="join-page-header">
+                    <h1>Join Our <span class="highlight">Community of Care</span></h1>
+                    <p>Be part of our mission to provide compassionate healthcare services to families in need. Whether you're a healthcare professional, caregiver, or someone who wants to make a difference, we welcome you to our family.</p>
+                </div>
+
+                <div class="join-form-container">
+                    <form id="detailedJoinForm" class="detailed-join-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3" placeholder="Enter your full address"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestType">How would you like to join us? *</label>
+                            <select id="interestType" name="interestType" required>
+                                <option value="">Select an option</option>
+                                <option value="healthcare-professional">Healthcare Professional</option>
+                                <option value="caregiver">Caregiver</option>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="service-seeker">Looking for Services</option>
+                                <option value="community-supporter">Community Supporter</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="experienceGroup" style="display: none;">
+                            <label for="experience">Years of Experience</label>
+                            <select id="experience" name="experience">
+                                <option value="">Select experience</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="1-3">1-3 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="5-10">5-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="specializationGroup" style="display: none;">
+                            <label for="specialization">Area of Specialization</label>
+                            <textarea id="specialization" name="specialization" rows="2" placeholder="e.g., Wound care, Medication management, Physiotherapy, etc."></textarea>
+                        </div>
+
+                        <div class="form-group" id="availabilityGroup" style="display: none;">
+                            <label for="availability">Availability</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability[]" value="weekday-morning">
+                                    Weekday Morning
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability[]" value="weekday-afternoon">
+                                    Weekday Afternoon
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability[]" value="weekday-evening">
+                                    Weekday Evening
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability[]" value="weekend">
+                                    Weekends
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="availability[]" value="on-call">
+                                    On-call/Emergency
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell us about yourself and why you want to join us</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Share your motivation, goals, or any additional information..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hearAboutUs">How did you hear about us?</label>
+                            <select id="hearAboutUs" name="hearAboutUs">
+                                <option value="">Select an option</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="google-search">Google Search</option>
+                                <option value="referral">Referral from friend/family</option>
+                                <option value="healthcare-provider">Healthcare Provider</option>
+                                <option value="community-event">Community Event</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group consent-group">
+                            <label class="checkbox-label consent-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                I consent to Loyal Home Nursing Care contacting me via email, phone, or text message regarding my application and relevant services. I understand I can opt out at any time.
+                            </label>
+                        </div>
+
+                        <div class="form-group consent-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                I would like to receive newsletters and updates about Loyal Home Nursing Care services and community events.
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Cancel</button>
+                            <button type="submit" class="btn-primary">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message -->
+    <div id="joinSuccessMessage" class="success-message" style="display: none;">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Application Submitted Successfully!</h3>
+            <p>Thank you for your interest in joining our community. We'll review your application and get back to you within 2-3 business days.</p>
+            <button onclick="closeSuccessMessage()" class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>LOYAL</span>
+                    <span class="logo-subtitle">HOME NURSING CARE</span>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>561/1/1 Madiwela road,Thalawathugoda</p>
+                    <p><i class="fas fa-phone"></i>077 854 0201</p>
+                    <p><i class="fas fa-envelope"></i> loyalhomenursingcare@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#team">Team</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61577707857128&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@loyal.home.nursin"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Loyal Home Nursing Care. All rights reserved. | Treat Every Patient Like They Are Family</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form dynamic fields based on interest type
+        document.getElementById('interestType').addEventListener('change', function() {
+            const value = this.value;
+            const experienceGroup = document.getElementById('experienceGroup');
+            const specializationGroup = document.getElementById('specializationGroup');
+            const availabilityGroup = document.getElementById('availabilityGroup');
+            
+            // Reset display
+            experienceGroup.style.display = 'none';
+            specializationGroup.style.display = 'none';
+            availabilityGroup.style.display = 'none';
+            
+            // Show relevant fields
+            if (value === 'healthcare-professional' || value === 'caregiver') {
+                experienceGroup.style.display = 'block';
+                specializationGroup.style.display = 'block';
+                availabilityGroup.style.display = 'block';
+            } else if (value === 'volunteer') {
+                availabilityGroup.style.display = 'block';
+            }
+        });
+
+        // Form submission
+        document.getElementById('detailedJoinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form processing
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Processing...';
+            submitBtn.disabled = true;
+            
+            setTimeout(function() {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                // Show success message
+                document.getElementById('joinSuccessMessage').style.display = 'flex';
+                
+                // Reset form
+                document.getElementById('detailedJoinForm').reset();
+                
+                // Hide dynamic fields
+                document.getElementById('experienceGroup').style.display = 'none';
+                document.getElementById('specializationGroup').style.display = 'none';
+                document.getElementById('availabilityGroup').style.display = 'none';
+            }, 2000);
+        });
+
+        function closeSuccessMessage() {
+            document.getElementById('joinSuccessMessage').style.display = 'none';
+        }
+
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
