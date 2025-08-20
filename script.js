@@ -168,7 +168,7 @@ const getStartedBtn = document.querySelector('.cta-button');
 if (getStartedBtn) {
     getStartedBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        window.location.href = 'join.html';
+        window.location.href = '#team';
     });
 }
 
@@ -465,3 +465,4 @@ window.addEventListener('afterprint', () => {
 });
 
 console.log('Loyal Home Nursing Care website loaded successfully! 🏥💜');
+
